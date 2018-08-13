@@ -1,0 +1,16 @@
+/* 落地页管理 */
+
+.models {
+    .mune-bar {
+        margin-bottom: 22px;
+        text-align: right;
+    }
+    .handle-bar {
+        >a {
+            margin: 0 4px;
+        }
+        .review-icon {
+            font-size: 15px;
+        }
+    }
+}

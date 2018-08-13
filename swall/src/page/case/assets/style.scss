@@ -1,0 +1,65 @@
+.case-banner {
+    img {
+        width: 100%;
+    }
+}
+
+.case-content {
+    background: #fff;
+    padding: 80px 145px;
+    position: relative;
+    transform: translateY(-65px);
+    border-radius: $block-radius;
+    .case-item {
+        margin-bottom: 80px;
+    }
+    .case-link {
+        box-shadow: $card-shadow;
+        display: block;
+        color: #3e3e3e;
+        text-align: center;
+        padding: 60px 20px;
+        transition: all 500ms;
+        &:hover {
+            box-shadow: $card-shadow-hover;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 30px;
+            @include text-truncate()
+        }
+        > p {
+            margin-top: 18px;
+            height: 40px;
+            line-height: 20px;
+            overflow: hidden;
+            @include multi-text-truncate()
+        }
+    }
+    .item-logo {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #eee;
+    }
+    &.case-detail {
+        h1 {
+            color: #3e3e3e;
+        }
+    }
+    .detail-img {
+        margin-top: 20px;
+        img {
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 15px;
+        transform: translateY(0);
+    }
+    @include media-breakpoint-down(md) {
+        padding: 30px;
+    }
+}

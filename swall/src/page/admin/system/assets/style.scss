@@ -1,0 +1,28 @@
+.system-content {
+    .handle-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .system-list {
+        margin-top: 22px;
+    }
+    .system-set {
+        display: flex;
+        align-items: center;
+        .ant-btn {
+            margin-right: 6px;
+        }
+    }
+}
+
+.login-content {
+    .handle-bar {
+        display: flex;
+        .ant-input-search {
+            margin-right: 20px;
+        }
+    }
+    .login-list {
+        margin-top: 22px;
+    }
+}

@@ -1,0 +1,75 @@
+@import 'breakpoints';
+
+// 设置大小
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// 清除浮动
+@mixin clearfix() {
+    &::after {
+        content: "\200B";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+
+// 单行省略号
+@mixin text-truncate($width: 100%) {
+    width: $width;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// 多行省略号 只适用webkit浏览器
+@mixin multi-text-truncate($clamp: 2) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $clamp;
+    -webkit-box-orient: vertical;
+}
+
+// 超出裁剪
+@mixin overflow-hidden($width: 100%, $height: 100%) {
+    width: $width;
+    height: $height;
+    overflow: hidden;
+}
+
+// 图片等比缩放至铺满整个容器
+@mixin image-cover($width: 100%, $height: 100%) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}
+
+// 图片在容器里比缩放至全部展示
+@mixin image-full($width: 100%, $height: 100%) {
+    width: $width;
+    height: $height;
+    object-fit: contain;
+}
+
+// Ascending
+// Used to evaluate Sass maps like our grid breakpoints.
+@mixin _assert-ascending($map, $map-name) {
+    $prev-key: null;
+    $prev-num: null;
+    @each $key,
+    $num in $map {
+        @if $prev-num==null {
+            // Do nothing
+        }
+        @else if not comparable($prev-num, $num) {
+            @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+        }
+        @else if $prev-num>=$num {
+            @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+        }
+        $prev-key: $key;
+        $prev-num: $num;
+    }
+} 

@@ -1,0 +1,7 @@
+.about-content {
+    color: $link-color;
+    &:hover {
+        color: $link-hover-color;
+    }
+    @include text-truncate();
+}

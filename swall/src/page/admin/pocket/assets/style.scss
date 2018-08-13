@@ -1,0 +1,94 @@
+.pocket-content {
+    .pocket-items {
+        margin: -22px;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: calc(25% - 44px);
+            min-width: 268px;
+            height: 362px;
+            overflow: hidden;
+            margin:  22px;
+            padding: 40px 15px 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+            button {
+                border-radius: 20px;
+                line-height: 28px;
+                height: 30px;
+            }
+        }
+        .item-img {
+            width: 104px;
+            height: 104px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .item-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item-logo-text {
+            background: cyan;
+            line-height: 104px;
+            text-align: center;
+            font-size: 40px;
+            color: #fff;
+        }
+        .title {
+            margin-top: 34px;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+        .item-status {
+            margin-top: 32px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            &.item-status-0 > span {
+                color: #6CBB1E;
+            }
+            &.item-status-1 > span {
+                color: #FF9057;
+            }
+            &.item-status-2 > span {
+                color: #FF5831;
+            }
+            &.item-status-3 > span {
+                color: #FF9057;
+            }
+            &.item-status-4 > span {
+                color: #dc3545;
+            }
+            &.item-status-5 > span {
+                color: #3E3E3E;
+            }
+            &.item-status-6 > span {
+                color: #3598FE;
+            }
+            .anticon-question-circle {
+                font-weight: 400;
+                margin-left: 4px;
+            }
+            .edit-wrap {
+                margin-top: 8px;
+            }
+        }
+        .item-date {
+            margin-top: 20px;
+            color: #9a9a9a;
+        }
+        .item-btn {
+            margin-top: 36px;
+        }
+        .reload-link {
+            margin-top: 20px;
+            color: #40a9ff;
+            font-size: 13px;
+            display: inline-block;
+        }
+    }
+}

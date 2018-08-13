@@ -1,0 +1,294 @@
+.carousel {
+    img {
+        width: 100%;
+    }
+    background: #eee;
+    width: 100%;
+    .carousel-cell {
+        width: 100%;
+        position: absolute;
+    }
+    .carousel-cell img {
+        width: 100%;
+    }
+    .carousel-cell .background-wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-size: 28px;
+        line-height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .flickity-page-dots {
+        bottom: 30px;
+    }
+    .flickity-page-dots .dot {
+        height: 4px;
+        width: 50px;
+        margin: 0;
+        margin: 0 10px;
+        border-radius: 0;
+        background: white;
+        background: rgba(255, 255, 255, 1)
+    }
+    .carousel-cell .background-wrap .home-carousel-text {
+        display: inline-block;
+        padding: 0 20px;
+        line-height: 20px;
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    .carousel-cell.is-selected .background-wrap .home-carousel-text {
+        transition: all 2000ms ease 300ms;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    @include media-breakpoint-down(sm) {
+        .carousel-cell .background-wrap .home-carousel-text {
+            font-size: 14px;
+        }
+        .flickity-page-dots {
+            bottom: 10px;
+        }
+    }
+}
+
+.main {
+    .section {
+        padding-top: 86px;
+        padding-bottom: 80px;
+        .container>.ant-row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+    .btn-wrap {
+        margin-top: 60px;
+        text-align: center;
+        .index-btn {
+            color: #3598fe;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            box-sizing: border-box;
+            border: 1px solid #3598fe;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 14px;
+        }
+    }
+    
+    .moudle-title {
+        font-size: 26px;
+        color: #3e3e3e;
+        text-align: center;
+        margin-bottom: 64px;
+        .lines {
+            width: 90px;
+            border-bottom: 3px solid #3598fe;
+            margin: 8px auto 0;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .section {
+            padding-top: 66px;
+            padding-bottom: 60px;
+        }
+        .moudle-title {
+            margin-bottom: 44px;
+        }
+        .btn-wrap {
+            margin-top:40px;
+        }
+    }
+}
+
+// 广告套餐
+.section-package {
+    background: #f6f7f8;
+    .package-list {
+        height: 400px;
+    }
+    .package-item {
+        padding: 0 10px;
+        .card-shadow {
+            transition: all 500ms;
+        }
+        &:hover {
+            .package-value,
+            .card-shadow {
+                box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+    .package-image {
+        height: 390px;
+    }
+    .package-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .package-value {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: #fff;
+        width: 290px;
+        box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.05);
+        padding: 20px 30px;
+        transition: all 500ms;
+    }
+    .text-center {
+        text-align: center;
+        position: relative;
+    }
+    .package-name {
+        font-size: 16px;
+        line-height: 18px;
+        color: #3e3e3e;
+    }
+    .package-price {
+        margin-top: 12px;
+        color: #ff9057;
+        font-size: 16px;
+    }
+    .btn-wrap {
+        margin-top: 100px;
+    }
+    @include media-breakpoint-down(sm) {
+        .package-image {
+            width: 100%;
+        }
+        .package-item {
+            margin-bottom: 80px;
+            padding: 0 15px;
+        }
+        .btn-wrap {
+            margin-top: 40px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .package-item {
+            margin-bottom: 80px;
+            padding: 0 15px;
+        }
+    }
+}
+
+// 平台优势
+.section-stand {
+    background: #fff;
+    .row-wrap {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .row-wrap .row-item {
+        flex: 1;
+        margin-right: 14px;
+        text-align: center;
+        padding: 40px 20px 30px;
+        background: #fff;
+    }
+
+    .row-wrap .row-item .img-box {
+        height: 125px;
+    }
+
+    .row-wrap .row-item:last-child {
+        margin-right: 0;
+    }
+
+    .row-wrap .row-item h4 {
+        margin-top: 32px;
+        font-size: 18px;
+        color: #3e3e3e;
+    }
+    .row-wrap .row-item p {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #999;
+        line-height: 24px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .row-wrap {
+            display: block;
+        }
+        .row-wrap .row-item {
+            padding: 20px 0 10px;
+            width: 60%;
+            height: 296px;
+            margin: 10px;
+            box-shadow: 0 5px 20px 0px rgba(47, 47, 47, 0.05);
+            &:last-child {
+                margin-right: 10px;
+            }
+            > p {
+                padding: 0 15px;
+            }
+        }
+    }
+    
+}
+
+// 案例
+.section-case {
+    background: #f6f7f8;
+    .package-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 1px solid #eee;
+    }
+    .package-name {
+        font-size: 16px;
+        margin-top: 34px;
+        color: #3e3e3e;
+    }
+    .package-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .package-text {
+        margin-top: 16px;
+        height: 40px;
+        line-height: 20px;
+        overflow: hidden;
+        color: #999;
+    }
+    .text-center {
+        padding: 60px 20px;
+    }
+    .case-link {
+        display: block;
+        background: #fff;
+        transition: all 500ms;
+        &:hover {
+            box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.12);
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .case-item {
+            margin-bottom: 15px;
+        }
+    }
+}
+

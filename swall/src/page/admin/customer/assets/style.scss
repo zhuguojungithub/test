@@ -1,0 +1,185 @@
+.customer-main {
+    .content {
+        margin-top: 22px;
+    }
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.customer-content{
+    background:#f1f8ff;
+    padding:15px 150px 15px 100px;
+    .company-baseinfo{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:20px;
+        width: 618px;
+        .company-names{
+            width:240px;
+            .names{
+                line-height:38px;
+                font-size:18px;
+                font-weight:bold;
+                color:#3699ff;
+                word-break:break-all;
+            }
+            .original-id{
+                font-size:14px;
+                font-weight:bold;
+                color:#565759;
+                line-height:32px;
+            }
+        }
+        .status-box{
+            width:378px;
+            .company-status{
+                width:378px;
+                .status-not-pass{
+                    color:#ff5730;
+                    font-size:15px;
+                    font-weight:bold;
+                    line-height:38px;
+                    .status-company-name{
+                        color:#333;
+                    }
+                }
+                .not-pass-cause{
+                    background:#e9eef2;
+                    padding:10px 12px;
+                    box-sizing:border-box;
+                    width:286px;
+                    height:auto;
+                }
+            }
+        }
+        
+    }
+
+    .title{
+        height:36px;
+        line-height:36px;
+        font-size:16px;
+        font-weight:bold;
+        color:#454449;
+        margin-bottom:10px;
+    }
+    .infos{
+        .info-list{
+            display:flex;
+            justify-content:space-between;
+            .info-type{
+                width:100px;
+                height:32px;
+                margin-right: 40px;
+                line-height:32px;
+                text-align: right;
+            }
+            .info-val{
+                flex: 1;
+                height:32px;
+                line-height:32px;
+                font-size:14px;
+            }
+        }
+    }
+    .show-all{
+        color:#3598fe;
+        font-size:12px;
+        line-height:36px;
+    }
+
+    .contact-list {
+        margin-top: 20px;
+    }
+
+    .contact-box{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        height:auto;
+        .contact-lists{
+            width:324px;
+            height:125px;
+            background:#fff;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+            margin-bottom:30px;
+            padding:15px 20px;
+            position:relative;
+            .contact-info{
+                display:flex;
+                justify-content:space-between;
+                .contact-type{
+                    width:75px;
+                    height:32px;
+                    line-height:32px;
+                    color:#3e3e3e;
+                    font-weight:bold;
+                }
+                .contact-val{
+                    width:207px;
+                    height:32px;
+                    line-height:32px;
+                    color:#3e3e3e;
+                    font-weight:bold;
+                    position:relative;
+                    .contact-status{
+                        position:absolute;
+                        right:0;
+                        top:0;
+                        bottom:0;
+                        line-height:32px;
+                        width:50px;
+                        text-align:right;
+                    }
+                    .contact-resigned{
+                        color:#6dbd20;
+                    }
+                    .contact-resign{
+                        color:#ff5b36;
+                    }
+
+                }
+            }
+            .editor-box{
+                position:absolute;
+                right:10px;
+                bottom:10px;
+                line-height:32px;
+                width:50px;
+                text-align:right;
+                display:flex;
+                justify-content:space-between;
+                font-size:18px;
+                color:#acacac;
+                div{
+                    cursor:pointer;
+                }
+            }
+        }
+        .contant-add{
+            font-size:40px;
+            line-height:95px;
+            text-align:center;
+            cursor:pointer;
+            color:#ccc;
+        }
+    }
+}
+
+
+/*联系人编辑*/
+
+.contact-input{
+    display:flex;
+    justify-content:space-between;
+    .contact-type{
+        width:80px;
+        line-height:32px;
+    }
+    .contact-inputs{
+        width:440px;
+    }
+}
+

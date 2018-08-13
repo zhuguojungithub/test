@@ -1,0 +1,34 @@
+.adver{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    .select-box{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        width:700px;
+    }
+    .option-box{
+        width:400px;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        .option-type{
+            width:120px;
+            height:80px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+        .search-boxes{
+            height:80px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            padding-left:20px;
+        }
+    }
+}
+.data-table{
+    margin-top:22px;
+}

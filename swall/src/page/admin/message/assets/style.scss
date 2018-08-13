@@ -1,0 +1,43 @@
+.message-content {
+    .message-list {
+        margin-top: 20px;
+        li {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+            position: relative;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .read-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .m-value {
+            line-height: 22px;
+            height: 44px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .hover-pointer {
+            cursor: pointer;
+        }
+        .m-time {
+            color: #ccc;
+            font-size: 14px;
+        }
+    }
+    .message-panel {
+        margin-top: 20px;
+        display: flex;
+    }
+    .message-radio {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        .title {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+}

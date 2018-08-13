@@ -1,0 +1,161 @@
+// 如果当前有子项，那么当前这项就是个标题，不具备导航功能。
+
+export const menuData = [{
+    title: '首页',
+    jump: '/admin',
+    icon: '',
+    routes: []
+}, {
+    title: '广告套餐',
+    jump: '/admin/product',
+    icon: '',
+    routes: []
+}, {
+    title: '广告投放',
+    jump: '/admin/planList',
+    icon: '',
+    routes: []
+}, {
+    title: '推广页管理',
+    jump: '/admin/models',
+    icon: '',
+    routes: []
+}, {
+    title: '资质管理',
+    jump: '/admin/credentials',
+    icon: '',
+    routes: []
+}, {
+    title: '客户查询',
+    jump: '/admin/search',
+    icon: '',
+    routes: []
+}, {
+    title: '广告投放',
+    jump: '/admin/customer',
+    icon: '',
+    routes: []
+}, {
+    title: '广告平台',
+    jump: '/admin/pocket',
+    icon: '',
+    routes: []
+}, {
+    title: '数据中心',
+    jump: '/admin/database',
+    icon: '',
+    routes: [{
+        title: '投放计划维度',
+        jump: '/admin/database/plan',
+        icon: '',
+        routes: []
+    }, {
+        title: '广告主维度',
+        jump: '/admin/database/adverter',
+        icon: '',
+        routes: []
+    }, {
+        title: '广告维度',
+        jump: '/admin/database/advert',
+        icon: '',
+        routes: []
+    }]
+}, {
+    title: '账号管理',
+    jump: '/admin/account',
+    icon: '',
+    routes: [{
+        title: '注册用户',
+        jump: '/admin/account/register',
+        icon: '',
+        routes: []
+    }, {
+        title: '广告主',
+        jump: '/admin/account/advert',
+        icon: '',
+        routes: []
+    }, {
+        title: '开户管理',
+        jump: '/admin/account/manage',
+        icon: '',
+        routes: []
+    }]
+}, {
+    title: '系统设置',
+    jump: '/admin/config',
+    icon: '',
+    routes: [{
+        title: '消息管理',
+        jump: '/admin/config/message',
+        icon: '',
+        routes: [{
+            title: '系统消息',
+            jump: '/admin/config/message/system',
+            icon: '',
+            routes: []
+        }, {
+            title: '发送记录',
+            jump: '/admin/config/message/logger',
+            icon: '',
+            routes: []
+        }]
+    }, {
+        title: '系统日志',
+        jump: '/admin/config/logger',
+        icon: '',
+        routes: [{
+            title: '操作日志',
+            jump: '/admin/config/logger/operate',
+            icon: '',
+            routes: []
+        }, {
+            title: '登录日志',
+            jump: '/admin/config/logger/login',
+            icon: '',
+            routes: []
+        }]
+    }, {
+        title: '导入数据',
+        jump: '/admin/config/upload',
+        icon: '',
+        routes: []
+    }, { // 二级
+        title: '多级菜单测试',
+        jump: '/admin/config/more',
+        icon: '',
+        // 三级
+        routes: [{
+            title: '多级菜单1-1',
+            jump: '/admin/config/more/one',
+            icon: '',
+            // 四级
+            routes: [{
+                title: '多级菜单2-1',
+                jump: '/admin/config/more/one/a',
+                icon: '',
+                // 五级
+                routes: [{
+                    title: '多级菜单3-1',
+                    jump: '/admin/config/more/one/a/1',
+                    icon: '',
+                    routes: []
+                }, {
+                    title: '多级菜单3-2',
+                    jump: '/admin/config/more/one/a/2',
+                    icon: '',
+                    routes: []
+                }]
+            }, {
+                title: '多级菜单2-2',
+                jump: '/admin/config/more/one/b',
+                icon: '',
+                routes: []
+            }]
+        }, {
+            title: '多级菜单1-2',
+            jump: '/admin/config/more/one-two',
+            icon: '',
+            routes: []
+        }]
+    }]
+}]

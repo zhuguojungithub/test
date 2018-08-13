@@ -1,0 +1,88 @@
+.register-advert-form {
+    .address {
+        display: flex;
+        .ant-select {
+            width: 100px;
+            margin-right: 10px;
+        }
+    }
+    .btn-group {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.register-verify-form {
+    .btn-group {
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+.simple-main {
+    .banner-wrap {
+        cursor: pointer;
+    }
+    .graphics-preview {
+        padding: 0 50px;
+        img {
+            width: 100%;
+            margin-top: 80px;
+        }
+    }
+}
+
+.main-manager {
+    .content-box {
+        display: flex;
+        .new-adverter {
+            flex: 1;
+            margin: 0 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            .show-all {
+                text-align: center;
+            }
+        }
+        .base-info {
+            flex: 1;
+            margin: 0 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            .base-item {
+                margin-bottom: 20px;
+            }
+            .month-consume {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .adverter-list {
+        height: 145px;
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+    }
+    .graphics-data {
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+    #graphicsBox {
+        border: 1px solid #ddd;
+    }
+}
+
+.public-content {
+    .product-wrap {
+        text-align: center;
+    }
+    .product-list {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: inline-block;
+        text-align: left;
+    }
+}
